@@ -1,5 +1,0 @@
----
-applications:
-- name: eloquent-hopper
-  memory: 512M
-  instances: 1
