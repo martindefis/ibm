@@ -2,3 +2,4 @@ applications:
 - name: fervent-tesla
   memory: 128M
   host: fervent-tesla
+  buildpack: staticfile_buildpack
