@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<title>Socket.IO chat</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+
+<div id="userContainer"> 
+	<form id="userForm">
+		<input type="text" class="form-control" id="username" placeholder="Enter your chat name" > <br>
+		<button type="submit" class="btn btn-default" id="submit_chatname_button">Submit</button>
+	</form>
+
+</div>
+
+<div id="chatContainer"> 
+	<div id="profil_bloc">
+		<label id="feedback"></label>
+		<img src="css/user.png" alt="user_img" id="user_img"> <label id="username_label"></label>
+	</div>
+	<img src="css/img1.jpg" alt="chat_image" id="chat_image">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5" id="chat_area">
+				<div class="row" id="public_messages">
+					<div id="chat_messages"></div>
+				</div>
+
+				
+			</div>
+
+			<div class="col-md-4" id="private_zone"> </div>
+
+			<div class="col-md-3">
+				<span id="number_online_users"> </span>
+				<ul class="list-group" id="online_users_ul"></ul>
+			</div>
+		</div>
+
+		<form class="form-inline" id="chatForm">
+			<input type="text" class="form-control col-md-6" id="my_msg" placeholder="Enter your message">
+
+			<div class="input-group mb-2 mr-sm-2 mb-sm-0" style="margin-left: 10px;">
+			    <input type="file" class="filestyle" data-classButton="btn btn-default" data-input="false" 						data-classIcon="icon-plus" data-buttonText="Add file" id="file">
+			</div>
+
+			  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+
+	</div>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/bootstrap-filestyle.js"></script>    
+<script src="js/notify.js"></script>
+<script src="/socket.io/socket.io.js"></script> 
+<script src="/js/delivery.js"></script>
+<script src="js/app.js"></script>
+
+</html>
